@@ -63,8 +63,15 @@
     <form action="minhal.html" method="POST">
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Login</button>
+        <button type="submit" class="btn" onclick="redirectToLogin()">Login</button>
     </form>
     <a href="signup.html">Sign Up</a>
+    <script>
+        function redirectToLogin() {
+            // Redirect to login page
+            
+            window.location.href = "minhal.html";
+        }
+    </script>
 </body>
 </html>
